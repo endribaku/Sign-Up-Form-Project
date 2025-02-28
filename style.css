@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(244, 242, 242);
+    justify-content: space-between;
+    --font-1st-color: rgb(60, 60, 60);
+    --font-2nd-color: rgb(83, 83, 83);
+    --border-shadow: #E5E7EB;
+    color: var(--font-1st-color);
+}
+
+.odin-image {
+    position:relative;
+    width: 40%;
+    height: 100vh;
+    overflow: clip;
+    z-index: -1;
+}
+
+.odin-image-real img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.odin-image-header {
+    background-color:rgba(0, 0, 0, 0.5) ;
+    height: 15%;
+    width: 100%;
+    left: 0;
+    top: 180px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    z-index: 0;
+    
+}
+
+.odin-image-header img  {
+    width: max(15%, 20px);
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+.odin-image-text {
+    font-family: 'Norse-Bold', sans-serif;
+    font-size: clamp(1rem, 4rem, 5vw);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.odin-image-text h1 {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Set the height to match the logo */
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    line-height: 50px;
+    margin-top: 2vw;
+    
+}
+
+.odin-sign-up-form {
+   
+    width: 60vw;
+    height: 100vh;
+    font-family: 'Quicksand-Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.odin-sign-up-header {
+    color: var(--font-1st-color);
+    padding: 3vw 8vw 3vw 2vw;
+    font-size: calc(6px + 1vw);
+    font-weight: 700;
+    max-height: 30%;
+    
+}
+
+.odin-sign-up-form-content {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--border-shadow);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1vw 5px 1vw 2vw;
+    
+   
+}
+
+.sign-up-row {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.sign-up-form-child {
+    display:flex;
+    flex-direction: column;
+    
+
+}
+
+label {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+    font-weight:600;
+    color: var(--font-2nd-color);
+}
+
+input {
+    min-width: calc(100px + 10vw);
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 3px;
+    min-height: 25px;
+}
+
+#password:invalid,
+#confirm-password:invalid {
+    border: 1px solid firebrick;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 3px 3px 3px var(--border-shadow)
+}
+
+.odin-sign-up-form-button 
+{
+    padding: 2vw 5px 1vw 2vw;
+    
+}
+
+.odin-sign-up-form-button button {
+    background-color: rgb(90, 112, 80);
+    outline: none;
+    box-shadow: 5px 10px 15px var(--border-shadow);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 40px 15px 40px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.log-in {
+    color: rgb(90, 112, 80);
+    font-weight: 600;
+}
+
+
+
+
+
+
